@@ -1,0 +1,82 @@
+.container{
+  padding:50px;
+  /* background-image: url("/images/bg.jpg"); */
+  height: 250px;
+  width: 350px;;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+#btn{
+  margin: 20px;
+}
+.one, .two, .three, .four {
+  position:absolute;
+  width:30px;
+  height:120px;
+  background-image: url("/images/bg.jpg");
+  /* animation-name: barsGrows;
+  animation-duration: 4s; */
+  transition-property: height;
+  transition-duration: 2s;
+}
+#onePercentage, #twoPercentage, #threePercentage, #fourPercentage{
+  position:absolute;
+  top:120px;
+  animation-name: barsGrows;
+  animation-duration: 4s;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color:white;
+  font-size: 1rem;
+  /* ============ */
+  margin-top:35px;
+  text-align: center;
+}
+.playAnimation{
+  height:0px;
+  top:0px;
+}
+.bar{
+  width:30px;
+  height:100px;
+  /* background-image: linear-gradient(to right bottom, #484a4e, #5a5c60, #6d6f73, #818387, #95979b, #95979b, #95979b, #95979b, #818387, #6d6f73, #5a5c60, #484a4e); */
+  background-image: url("./images/bar.jpg")
+}
+.answerMark{
+  color:#fff;
+  font-size: 1rem;
+  text-align: center;
+}
+/* .modalConteiner{
+  width:100%;
+  height:100%;
+  margin:0 auto;
+  /* background-color: rgba(100, 100, 100, 0.5); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+.show{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.hide{
+  display:none;
+}
+
+.test {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+}
+@keyframes example {
+  from {background-color: red;}
+  to {background-color: yellow;}
+}
+@keyframes barsGrows {
+  from{height:22%}
+  to{height:30px} 
+}

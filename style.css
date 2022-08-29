@@ -1,0 +1,29 @@
+#myProgress {
+  margin-top: 200px;
+  width: 20px;
+  height: 100px;
+  background-color: aqua
+}
+#myBar1{
+  /* margin-top: 200px; */
+  width: 20px;
+  height: 100px;
+  background-color: rgb(125, 104, 104);
+}#myBar2{
+  width: 20px;
+  height: 1px;
+  background-color: gray;
+}#myBar3{
+  width: 20px;
+  height: 1px;
+  background-color: gray;
+}#myBar4{
+  width: 20px;
+  height: 1px;
+  background-color: gray;
+}
+.container{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
