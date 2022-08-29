@@ -22,7 +22,6 @@ function displayAudienceHelp() {
   divTwo.style.height = 100 - arr[1] + "px";
   divTwoPercentage.style.top = 100 - arr[1] + "px";
   divTwoPercentage.innerHTML = arr[1] + "%";
-  divTwo.classList.add("playAnimation");
 
   divThree.style.height = 100 - arr[2] + "px";
   divThreePercentage.style.top = 100 - arr[2] + "px";
@@ -69,7 +68,8 @@ function displayAudienceHelp() {
 function callAFriendHint(string) {
   console.log(string);
 }
-function fiftyFiftyHint(string) {
+function fiftyFiftyHint() {
   const testElement = document.getElementById("test");
   testElement.classList.remove("hide")
+  const testBarElement = document.getElementById("bar")
 }
