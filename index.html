@@ -9,30 +9,30 @@
     <title>Document</title>
   </head>
   <body>
-   
     <div class="container hide" id="container">
-      <div class="element">
+      <div class="icon" id="icon"></div>
+      <div class="firstElement">
         <div class="one" id="one"></div>
         <div class="bar">
           <div id="onePercentage"></div>
         </div>
         <div class="answerMark">A</div>
       </div>
-      <div class="element">
+      <div class="secondElement">
         <div class="two" id="two"></div>
         <div class="bar">
           <div id="twoPercentage"></div>
         </div>
         <div class="answerMark">B</div>
       </div>
-      <div class="element">
+      <div class="thirdElement">
         <div class="three" id="three"></div>
         <div class="bar">
           <div id="threePercentage"></div>
         </div>
         <div class="answerMark">C</div>
       </div>
-      <div class="element">
+      <div class="fourthElement">
         <div class="four" id="four"></div>
         <div class="bar">
           <div id="fourPercentage"></div>
@@ -40,10 +40,8 @@
         <div class="answerMark">D</div>
       </div>
     </div>
-    
-    </div>
     <button class="btn" value="50/50" id="btn" onclick="fiftyFiftyHint()">50/50</button>
     <button class="btn" value="audienceHelp" id="btn" onclick="displayAudienceHelp()">audience</button>
-    <button class="btn" value="callAFriend" id="btn" onclick="callAFriendHint(this.value)">friend</button>
+    <button class="btn" value="callAFriend" id="btn" onclick="callAFriendHint()">friend</button>
   </body>
 </html>

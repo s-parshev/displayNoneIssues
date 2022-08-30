@@ -1,5 +1,5 @@
 function displayAudienceHelp() {
-  const persentage = [25, 50.21, 95.99, 19];
+  const persentage = [25, 50, 95, 19];
   const containerElement = document.getElementById("container");
   containerElement.classList.remove("hide");
   setTimeout(()=>{
@@ -8,6 +8,7 @@ function displayAudienceHelp() {
 }
 function play(array){
   const persentage = [...array]
+
   const divOne = document.getElementById("one");
   const divOnePercentage = document.getElementById("onePercentage");
   const divTwo = document.getElementById("two");
@@ -20,6 +21,7 @@ function play(array){
   divOnePercentage.style.top = 100 - persentage[0] + "px";
   divOnePercentage.innerHTML = persentage[0] + "%";
   divOnePercentage.classList.add("playAnimation");
+
 
   divTwo.style.height = 100 - persentage[1] + "px";
   divTwoPercentage.style.top = 100 - persentage[1] + "px";

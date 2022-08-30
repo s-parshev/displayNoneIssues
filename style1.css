@@ -1,12 +1,19 @@
 .container{
-  padding:50px;
+  position: absolute;
+  /* positioning */
+  top:50%;
+  left:40%;
+  padding-top:100px;
   background-image: url("/images/bg.jpg");
   height: 250px;
   width: 350px;;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  border:solid 2px white;
+  border-radius: 5px;
 }
+
 #btn{
   margin: 20px;
 }
@@ -26,12 +33,12 @@
   font-size: 1rem;
   transition-property: top;
   transition-duration: 2s;
-  margin-top:35px;
+  margin-top:90px;
   text-align: center;
 }
 .playAnimation{
-  height:150px;
-  top:10px;
+  height:250px;
+  top:110px;
 }
 .bar{
   width:30px;
@@ -42,6 +49,7 @@
   color:#fff;
   font-size: 1rem;
   text-align: center;
+  margin-top: 20px;
 }
 .hide{
   display:none;
