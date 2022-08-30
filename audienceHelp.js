@@ -12,7 +12,6 @@ function displayAudienceHelp() {
 }
 function audience(array){
   const persentage = [...array]
-
   const divOne = document.getElementById("one");
   const divOnePercentage = document.getElementById("onePercentage");
   const divTwo = document.getElementById("two");
