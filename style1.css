@@ -36,22 +36,24 @@
 }
 .continueButton{
   background-image: url("/images/buttonContinue.png");
-  height:39px;
+  height:42px;
   width:195px;
   position: absolute;
-  bottom: -20px;
+  bottom: -23px;
   font-size: 1.5rem;
   cursor: pointer;
 }
 div.continueButton:hover{
-  background-image: url("/images/hoverBtn.png");
-  height:39px;
-  width:196px;
+  background-image: url("/images/buttonCH.png");
+  height:42px;
+  width:195px;
   position: absolute;
-  bottom: -20px;
+  bottom: -23px;
   font-size: 1.5rem;
   cursor: pointer;
-}
+
+  cursor: pointer; 
+} 
 .one, .two, .three, .four {
   position:absolute;
   width:30px;
