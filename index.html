@@ -9,35 +9,45 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="container hide" id="container">
-      <div class="icon" id="icon"></div>
-      <div class="firstElement">
-        <div class="one" id="one"></div>
-        <div class="bar">
-          <div id="onePercentage"></div>
+    <div class="container-cover-all-screen hide" id="main"></div>
+    <div class="container container-center-content hide" id="friend">
+      <div class="icon-friend" id="icon-friend"></div>
+      <div class="messages" id="messages"></div>
+      <div class="continueButton" onclick="hideFriendHint()">continue</div>
+    </div>
+    <div class="barsElements" >
+      <div class="icon-audience hide" id="icon-audience"></div>
+      <div class="container container-center-content hide" id="audience">
+        <div class="firstElement">
+          <div class="one" id="one"></div>
+          <div class="bar">
+            <div id="onePercentage"></div>
+          </div>
+          <div class="answerMark">A</div>
         </div>
-        <div class="answerMark">A</div>
-      </div>
-      <div class="secondElement">
-        <div class="two" id="two"></div>
-        <div class="bar">
-          <div id="twoPercentage"></div>
+        <div class="secondElement">
+          <div class="two" id="two"></div>
+          <div class="bar">
+            <div id="twoPercentage"></div>
+          </div>
+          <div class="answerMark">B</div>
         </div>
-        <div class="answerMark">B</div>
-      </div>
-      <div class="thirdElement">
-        <div class="three" id="three"></div>
-        <div class="bar">
-          <div id="threePercentage"></div>
+        <div class="thirdElement">
+          <div class="three" id="three"></div>
+          <div class="bar">
+            <div id="threePercentage"></div>
+          </div>
+          <div class="answerMark">C</div>
         </div>
-        <div class="answerMark">C</div>
-      </div>
-      <div class="fourthElement">
-        <div class="four" id="four"></div>
-        <div class="bar">
-          <div id="fourPercentage"></div>
+        <div class="fourthElement">
+          <div class="four" id="four"></div>
+          <div class="bar">
+            <div id="fourPercentage"></div>
+          </div>
+          <div class="answerMark">D</div>
         </div>
-        <div class="answerMark">D</div>
+      <div class="continueButton" onclick="hideAudienceHint()">continue</div>
+
       </div>
     </div>
     <button class="btn" value="50/50" id="btn" onclick="fiftyFiftyHint()">50/50</button>

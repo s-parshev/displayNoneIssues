@@ -1,12 +1,16 @@
 function displayAudienceHelp() {
   const persentage = [25, 50, 95, 19];
-  const containerElement = document.getElementById("container");
+  const mainElement = document.getElementById("main");
+  const containerElement = document.getElementById("audience");
+  const iconElement = document.getElementById("icon-audience")
+  mainElement.classList.remove("hide");
   containerElement.classList.remove("hide");
+  iconElement.classList.remove("hide");
   setTimeout(()=>{
-    play(persentage)
+    audience(persentage)
   },100)
 }
-function play(array){
+function audience(array){
   const persentage = [...array]
 
   const divOne = document.getElementById("one");
@@ -40,4 +44,35 @@ function play(array){
   divFourPercentage.classList.add("playAnimation")
 
 }
-
+function callAFriendHint(){
+  const mainElement = document.getElementById("main");
+  const iconElement = document.getElementById("icon-friend");
+  const containerElement = document.getElementById("friend");
+  containerElement.classList.remove("hide");
+  mainElement.classList.remove("hide");
+  iconElement.classList.remove("hide")
+  setTimeout(()=>{
+    friend()
+  },100)
+}
+function friend(){
+  const userMessage =" I think the correct answer is 'J'."
+  const messageElement = document.getElementById("messages");
+  messageElement.innerHTML = userMessage;
+}
+function hideFriendHint(){
+  const mainElement = document.getElementById("main");
+  const containerElement = document.getElementById("friend");
+  const iconFriendElement = document.getElementById("icon-friend");
+  iconFriendElement.classList.add("hide");
+  containerElement.classList.add("hide")
+  mainElement.classList.add("hide")
+}
+function hideAudienceHint(){
+  const mainElement = document.getElementById("main");
+  const audineceElement = document.getElementById("audience");
+  const iconAudienceElement = document.getElementById("icon-audience");
+  iconAudienceElement.classList.add("hide")
+  audineceElement.classList.add("hide")
+  mainElement.classList.add("hide")
+}
